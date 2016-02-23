@@ -23,7 +23,7 @@ public class Hasenfeldspiel {
         for (String[] Spielfeld1 : Spielfeld) {
             for (int t = 0; t<Spielfeld.length; t++) {
                 Spielfeld1[t] = ".";
-                //System.out.print(Spielfeld[i][t] + " ");
+               
             }
         }
         Spielfeld[3][5]="H";
@@ -33,19 +33,19 @@ public class Hasenfeldspiel {
         Spielfeld[7][9]="H";
         Spielfeld[2][2]="F";
         Spielfeld[13][13]="F";
-        
+        Spielfeld[1][7]="H";
+                Spielfeld[8][10]="H";
+                Spielfeld[8][8]="H";
+                Spielfeld[13][5]="H";
+                Spielfeld[7][5]="H";
+                Spielfeld[3][9]="F";
         FrameAPI.initFrame();
         FrameAPI.initString(Spielfeld.length, Spielfeld);
         FrameAPI.setPlayground();
         
         do{
             if(FrameAPI.newRound){
-                Spielfeld[1][7]="H";
-                Spielfeld[8][10]="H";
-                Spielfeld[8][8]="H";
-                Spielfeld[13][5]="H";
-                Spielfeld[7][5]="H";
-                Spielfeld[3][9]="F";
+                
                 moveHasen();
                 FrameAPI.initString(Spielfeld.length, Spielfeld);
                 FrameAPI.setPlayground();
